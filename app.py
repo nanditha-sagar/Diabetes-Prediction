@@ -88,6 +88,14 @@ def symptoms_to_features(payload: dict) -> dict:
 
     return features
 
+@app.route("/")
+def home():
+    return {
+        "message": "Diabetes Prediction API is running",
+        "health": "/health",
+        "predict": "/predict"
+    }
+
 
 @app.route("/health", methods=["GET"])
 def health():
