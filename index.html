@@ -1131,7 +1131,8 @@
         result.style.display = "none";
 
         try {
-          const apiUrl = document.getElementById("apiUrl").value.trim();
+          <!-- const apiUrl = document.getElementById("apiUrl").value.trim(); -->
+          const apiUrl = "/predict";
           const res = await fetch(apiUrl, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
