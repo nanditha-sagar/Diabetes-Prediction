@@ -893,15 +893,18 @@ body {
   border: 1px solid #fcd34d;
   border-radius: var(--radius-md);
   padding: 1rem 1.25rem;
-  font-size: 13px;
+  font-size: 12px;
   color: #78350f;
   line-height: 1.6;
   display: flex;
   gap: 8px;
+  position: sticky;
+  bottom: 0;
 }
 .disclaimer span {
-  font-size: 18px;
+  font-size: 15px;
   flex-shrink: 0;
+  text-align: center;
 }
 
 /* ── Responsive ── */

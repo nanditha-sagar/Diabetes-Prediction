@@ -14,7 +14,7 @@ CORS(app)
 CSV_PATH = os.path.join(os.path.dirname(__file__), "diabetes.csv")
 diabetes_dset = pd.read_csv(CSV_PATH)
 
-X = diabetes_dset.drop(columns="Outcome", axis=1)
+X = diabetes_dset.drop(columns="Outcome")
 Y = diabetes_dset["Outcome"]
 
 scaler = StandardScaler()
