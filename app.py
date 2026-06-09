@@ -8,7 +8,7 @@ from sklearn import svm
 import os
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=False)
 
 # ── Train model on startup ────────────────────────────────────────────────────
 CSV_PATH = os.path.join(os.path.dirname(__file__), "diabetes.csv")
